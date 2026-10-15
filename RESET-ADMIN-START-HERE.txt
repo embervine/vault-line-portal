@@ -1,0 +1,17 @@
+VAULTLINE - RESET YOUR ADMIN PASSWORD
+
+1. Open the point-portal folder in File Explorer.
+2. In the folder address bar, type cmd and press Enter.
+3. Run: npm install
+4. Create a file named .env in this same folder if you do not have one.
+   Inside it, put DATABASE_URL= followed by your private Neon connection string.
+   Do not upload .env to GitHub or send it to anyone.
+5. Run: npm run reset-admin
+6. Type your NEW password (12 or more characters) twice. Nothing will show while typing; this is normal.
+7. Sign in with the admin username shown by the tool and your new password.
+
+This only changes the existing administrator password in Neon.
+It does not delete customer accounts, balances, or transactions.
+If it says no admin exists, run npm run setup first.
+If DATABASE_URL is missing, check the .env filename and location.
+If you exposed your Neon password in a screenshot, rotate it in Neon and update .env and Vercel.
