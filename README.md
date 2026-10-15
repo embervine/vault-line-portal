@@ -53,7 +53,3 @@ Set `NODE_ENV=production`; HTTPS is required for secure cookies. If the app is b
 
 ## IMPORTANT: If the page appears as plain text
 This release fixes stale browser CSS caching. Stop the server (Ctrl+C), replace the old project files with this version, then restart `npm start`. Open http://localhost:3000 and press Ctrl+Shift+R for a hard refresh. If the problem persists, visit http://localhost:3000/style.css?v=20261015-fixed — it should show CSS text. Make sure you extracted the entire ZIP, not just index.html.
-
-
-## Website Settings (administrator only)
-Sign in as administrator, choose **Website Settings** from the sidebar, edit the text fields, then click **Save website text**. Changes are stored in the existing SQLite database and appear to visitors when they reload the page. The `{name}` placeholder in greetings inserts the signed-in account name. Customer users cannot access the editor or change text. Keep your existing `data/portal.sqlite` file when upgrading so accounts, transactions and saved wording remain intact.
