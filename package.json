@@ -6,7 +6,7 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "setup": "node scripts/setup.js",
-    "reset-admin": "node scripts/reset-admin.js"
+    "reset-admin": "node --env-file=.env scripts/reset-admin.js"
   },
   "engines": {
     "node": ">=22"

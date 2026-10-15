@@ -1,0 +1,13 @@
+VAULTLINE - GITHUB AND VERCEL
+
+1. Upload the CONTENTS of this point-portal folder to your existing PRIVATE GitHub repository (not the parent ZIP folder).
+2. NEVER upload .env, passwords, or your Neon connection string. The .gitignore excludes .env.
+3. In Vercel > Project > Settings > Environment Variables, set DATABASE_URL to the complete NEW Neon connection string. Redeploy after changes.
+4. On your own Windows computer, create a .env file in point-portal containing DATABASE_URL= followed by your private Neon connection string, on ONE line.
+5. Open Command Prompt in point-portal and run npm install, then npm run setup to create the first admin account. If an admin already exists, use npm run reset-admin to change its password.
+6. Do not share passwords in chat. The reset tool prompts for a new password locally.
+7. If Vercel shows an error, check Vercel Runtime Logs.
+
+SECURITY: Your Neon password appeared in an earlier screenshot. Reset/rotate it in Neon, then update both local .env and Vercel DATABASE_URL.
+
+This ZIP is source code. It has not been tested against your private Neon database or live Vercel deployment.
